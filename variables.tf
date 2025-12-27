@@ -3,7 +3,7 @@ variable "security_group" {
   
 }
 
-variable "instance_size" { # WE CAN WRITE OUR OWN INSTANCE TYPE IF WE ARE NOT SATISFIED WITH MODULE WRITTEN ONE
+variable "instance_size" { # WE CAN WRITE OUR OWN INSTANCE TYPE IF WE ARE NOT SATISFIED WITH MODULE WRITTEN ONE BUT WITH IN SPECIFIED CONDITION IN MODULE INSTANCE TYPE
     default = "t3.medium"
 }
 
@@ -14,4 +14,5 @@ variable "tags_test" {
         Environment = "dev"
     }
   
+
 }
